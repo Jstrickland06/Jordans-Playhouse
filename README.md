@@ -1,25 +1,14 @@
-# Jordans-Playhouse
-### text styles
-- **Bold**
-- *Italic*
-- ~~Strikethrough~~
-- 'inline code'
+# Olive Garden Menu Normalization – Jordan Strickland
 
+This solution takes semi-organized text copied from the Olive Garden lunch menu and turns it into a simple CSV file with three fields: item name, price, and calories.
 
-  ## Lists
-  -to-do:
-  - [x] create repository
-  - [x] Add README
-  - [ ] Push from repo
+## Files
 
-  ## Useful Links
-  - [GitHub](https://github.com) - Where the magics at
-  - [markdown Guide](https://www.markdownguide.org/basic-syntax/) My refrence
+- `myMenuScript.sh` – shell script that reads `olive_raw.txt` and outputs `my_output.csv`
+- `olive_raw.txt` – raw copied text from the Olive Garden menu
+- `my_output.csv` – structured CSV output created by the script
 
+## How to run the script
 
-    ## example code
-    '''bash
-    git init
-    git add .
-    git commit -m "first commit"
-    git push origin main
+```bash
+./myMenuScript.sh > my_output.csv
