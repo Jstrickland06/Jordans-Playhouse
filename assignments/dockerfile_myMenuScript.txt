@@ -1,0 +1,8 @@
+FROM ubuntu
+
+WORKDIR /menu
+
+COPY myMenuScript.sh /bin
+COPY olive_raw.txt .
+
+CMD ["bash", "/bin/myMenuScript.sh"]
